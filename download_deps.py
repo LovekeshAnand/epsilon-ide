@@ -3,8 +3,17 @@ import sys
 import subprocess
 
 def install_requirements():
-    print("Installing Python requirements (huggingface_hub)...")
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "huggingface_hub"])
+    print("Installing Python requirements (huggingface_hub, sqlite-vec, tree-sitter, etc)...")
+    reqs = [
+        "huggingface_hub", 
+        "sqlite-vec", 
+        "tree-sitter", 
+        "tree-sitter-python", 
+        "tree-sitter-cpp",
+        "llama-cpp-python",
+        "tinygrad"
+    ]
+    subprocess.check_call([sys.executable, "-m", "pip", "install"] + reqs)
 
 def download_models():
     try:
