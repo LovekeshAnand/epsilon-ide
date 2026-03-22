@@ -1,0 +1,27 @@
+# Python
+epsilon-env/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Model files (too large for GitHub)
+BitNet/
+models/
+*.gguf
+*.bin
+*.safetensors
+
+# Database and index
+clara.db
+*.db
+monitor.log
+logs/
+
+# Test files
+test_*.py
+/tmp/
+
+# OS
+.DS_Store
+Thumbs.db
