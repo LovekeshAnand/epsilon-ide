@@ -1,27 +1,127 @@
-# Python
+# Python Virtual Environments
+venv/
 epsilon-env/
+env/
+ENV/
+.venv
+
+# Python Cache & Bytecode
 __pycache__/
+*.py[cod]
+*$py.class
 *.pyc
 *.pyo
-.pytest_cache/
+*.pyd
+.Python
 
-# Model files (too large for GitHub)
+# Testing
+.pytest_cache/
+.coverage
+.tox/
+htmlcov/
+test_*.py
+tests/__pycache__/
+
+# Model Files (Large - Do Not Push)
 BitNet/
 models/
 *.gguf
 *.bin
 *.safetensors
+*.pt
+*.pth
+*.onnx
 
-# Database and index
-clara.db
+# Database Files
 *.db
-monitor.log
+*.sqlite
+*.sqlite3
+clara.db
+vector_store.db
+
+# Configuration & Secrets
+config.yaml
+.env
+.env.local
+secrets.yaml
+telegram_token.txt
+
+# Conversation & Runtime Data
+conversation.json
+conversation_*.json
+memory/
+state/
+cache/
+
+# Logs
+*.log
 logs/
+monitor.log
+debug.log
+error.log
 
-# Test files
-test_*.py
+# Temporary Files
 /tmp/
+temp/
+*.tmp
+*.temp
+.cache/
 
-# OS
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
+
+# Build & Distribution
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Documentation builds
+docs/_build/
+site/
+
+# Package managers
+pip-log.txt
+pip-delete-this-directory.txt
+.pip-cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Profiling
+*.prof
+*.lprof
